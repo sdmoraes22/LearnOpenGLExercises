@@ -1,1 +1,0 @@
-  -L"D:/Cristiano/Estudo/CPP/OpenGLTutorial/Ex 01/../../../../Libs/glfw-3.3.8.bin.WIN64/lib-mingw-w64"  -lglfw3 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
