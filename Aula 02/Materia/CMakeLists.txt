@@ -16,3 +16,5 @@ add_custom_target(copy_resources ALL
     COMMAND ${CMAKE_COMMAND} -E copy_directory
     ${PROJECT_SOURCE_DIR}/Shaders
     ${PROJECT_BINARY_DIR}/Shaders)
+
+add_dependencies(OpenGLTutorial copy_resources)
