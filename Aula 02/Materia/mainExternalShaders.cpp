@@ -31,7 +31,7 @@ int main()
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
-        glfwTerminate();
+        glfwTerminate(); 
         return -1;
     }
     glfwMakeContextCurrent(window);
@@ -47,7 +47,7 @@ int main()
 
     // build and compile our shader program
     // ------------------------------------
-    Shader ourShader("../Shaders/shaderMultipleColor.vert", "../Shaders/shaderMultipleColor.frag"); // you can name your shader files however you like
+    Shader ourShader("Shaders/shaderMultipleColor.vert", "Shaders/shaderMultipleColor.frag"); // you can name your shader files however you like
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------

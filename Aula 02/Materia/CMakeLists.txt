@@ -11,3 +11,8 @@ target_include_directories(OpenGLTutorial PRIVATE ${CMAKE_SOURCE_DIR}/../../../.
 target_include_directories(OpenGLTutorial PRIVATE ${CMAKE_SOURCE_DIR}/learnopengl/)
 target_link_directories(OpenGLTutorial PRIVATE ${CMAKE_SOURCE_DIR}/../../../../../Libs/glfw-3.3.8.bin.WIN64/lib-mingw-w64/)
 target_link_libraries(OpenGLTutorial glfw3)
+
+add_custom_target(copy_resources ALL 
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${PROJECT_SOURCE_DIR}/Shaders
+    ${PROJECT_BINARY_DIR}/Shaders)
