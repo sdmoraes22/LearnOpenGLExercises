@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.27.6)
 project(OpenGLTutorial)
 
-set(SOURCES main.cpp ${CMAKE_SOURCE_DIR}/../../../../../Libs/glad/src/glad.c)
+# set(SOURCES main.cpp ${CMAKE_SOURCE_DIR}/../../../../../Libs/glad/src/glad.c)
+set(SOURCES mainVertexDiffColors.cpp ${CMAKE_SOURCE_DIR}/../../../../../Libs/glad/src/glad.c)
 add_executable(OpenGLTutorial ${SOURCES})
 target_include_directories(OpenGLTutorial PRIVATE ${CMAKE_SOURCE_DIR}/../../../../../Libs/glad/include/)
 target_sources(OpenGLTutorial PRIVATE ${CMAKE_SOURCE_DIR}/../../../../../Libs/glad/src/)
